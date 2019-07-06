@@ -1,0 +1,27 @@
+extends ../main-layout
+
+block variables
+  -
+    var title = "¤html_title¤";
+
+block content
+  include ../components/grand-menu 
+  +grand-menu('step')
+  include ../components/language 
+  +language('step')
+  include ../components/header
+  +header('step')
+  main(role="main").main.d-flex.justify-content-center.align-items-center
+    section.step.step_3.text-center
+      .step__background
+      .container-fluid
+        .row
+          .col-12
+            .step__head.text-uppercase
+              p 
+                span ¤Welcome¤, 
+                span ¤User_Email_Address_on_step3_page¤
+            .step__form-btn
+              button.text-uppercase ¤Show_Cart¤
+  include ../components/footer 
+  +footer('step')

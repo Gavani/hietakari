@@ -1,0 +1,72 @@
+.furniture-screens{
+  padding: 0 26px;
+  @include laptop{
+    padding: 0 13px;
+  }
+  @include phone{
+    padding: 0;
+  }
+}
+.furniture-screens__head-text{
+  margin-bottom: 70px;
+  @include phone{
+    margin-bottom: 50px;
+  }
+  p{
+    font-size: 25px;
+    letter-spacing: 1px;
+    @include phone{
+      font-size: 22px;
+    }
+  }
+}
+.furniture-screens__item{
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  &:hover{
+    color: #ffffff;
+  }
+}
+.furniture-screens__item-img{
+  width: 100%;
+  margin-bottom: 25px;
+
+  img{
+    display: block;
+    width: 100%;
+  }
+}
+.furniture-screens__col{
+  padding: 0 17px 50px 17px;
+  @include phone{
+    padding: 0 0 45px 0;
+  }
+}
+.furniture-screens__item-name{
+  margin-bottom: 7px;
+  @include phone{
+    width: 95%;
+    margin: 0 auto 7px auto;
+    text-align: center;
+  }
+  p{
+    font-size: 14px;
+    @include europa(bold);
+    letter-spacing: 1px;
+  }
+}
+.furniture-screens__item-desc{
+  @include phone{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  p{
+    font-size: 10px;
+    @include europa(bold);
+    color: #676767;
+    letter-spacing: 1px;
+  }
+}

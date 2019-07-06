@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Europa-Regular';
+  src: url('../fonts/Europa-Regular.woff2') format('woff2'),
+      url('../fonts/Europa-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Europa-Light';
+  src: url('../fonts/Europa-Light.woff2') format('woff2'),
+      url('../fonts/Europa-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Europa-Bold';
+  src: url('../fonts/Europa-Bold.woff2') format('woff2'),
+      url('../fonts/Europa-Bold.woff') format('woff');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Europa-LightItalic';
+  src: url('../fonts/Europa-LightItalic.woff2') format('woff2'),
+      url('../fonts/Europa-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Europa-Italic';
+  src: url('../fonts/Europa-Italic.woff2') format('woff2'),
+      url('../fonts/Europa-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Europa-BoldItalic';
+  src: url('../fonts/Europa-BoldItalic.woff2') format('woff2'),
+      url('../fonts/Europa-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@mixin europa($style : regular){
+  @if $style == regular{
+    font-family: 'Europa-Regular', Arial, Helvetica, sans-serif;
+  }
+  @if $style == light{
+    font-family: 'Europa-Light', Arial, Helvetica, sans-serif;
+  }
+  @if $style == bold{
+    font-family: 'Europa-Bold', Arial, Helvetica, sans-serif;
+  }
+  @if $style == lightItalic{
+    font-family: 'Europa-LightItalic', Arial, Helvetica, sans-serif;
+  }
+  @if $style == italic{
+    font-family: 'Europa-Italic', Arial, Helvetica, sans-serif;
+  }
+  @if $style == boldItalic{
+    font-family: 'Europa-BoldItalic', Arial, Helvetica, sans-serif;
+  }
+}

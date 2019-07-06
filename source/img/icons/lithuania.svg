@@ -1,0 +1,9 @@
+<svg id="lithuania" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="flags">
+    <g id="lithuania-2" data-name="lithuania">
+      <path id="red" d="M35.3,120a16.007,16.007,0,0,1-30.179,0Z" transform="translate(-4.211 -98.667)" fill="#e94b35" fill-rule="evenodd"/>
+      <path id="green" d="M31.09,70.667A16.077,16.077,0,0,0,31.09,60H.91a16.077,16.077,0,0,0,0,10.667Z" transform="translate(0 -49.333)" fill="#1aaf5d" fill-rule="evenodd"/>
+      <path id="yellow" d="M20.211,0A16.007,16.007,0,0,0,5.121,10.667H35.3A16.007,16.007,0,0,0,20.211,0Z" transform="translate(-4.211)" fill="#f2c500" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

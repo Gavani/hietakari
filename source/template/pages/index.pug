@@ -1,0 +1,31 @@
+extends ../main-layout
+
+block variables
+  -
+    var title = "¤html_title¤";
+
+block content
+  include ../components/grand-menu 
+  +grand-menu('main')
+  include ../components/language 
+  +language('main')
+  include ../components/header
+  +header('main')
+  main(role="main").main
+    section.slider
+      #sliderMain.carousel.slide.carousel-fade(data-ride="carousel")
+        .carousel-inner
+          .carousel-item.active
+            img(src="assets/img/backgrounds/steklo-v-interere4.jpg", alt="Background Image")
+          .carousel-item
+            img(src="assets/img/backgrounds/HenryGlass_Vitra_GRAPHIC-920x627.jpg", alt="Background Image")
+        a(href="#sliderMain" role="button" data-slide="prev").carousel-control-prev
+          div.slide__arrow-wrapper
+            img(src="assets/img/icons/arrow-left.svg", alt="Arrow left")
+            span.sr-only Previous
+        a(href="#sliderMain" role="button" data-slide="next").carousel-control-next
+          div.slide__arrow-wrapper
+            img(src="assets/img/icons/arrow-right.svg", alt="Arrow right")
+            span.sr-only Previous
+  include ../components/footer 
+  +footer('main')

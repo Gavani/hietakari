@@ -10,9 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "hoek": "^5.0.3",
+    "imagesloaded": "^4.1.4",
     "jquery": "^3.3.1",
-    "normalize.css": "^8.0.0"
+    "masonry-layout": "^4.2.2",
+    "normalize.css": "^8.0.0",
+    "simple-parallax-js": "^5.0.0",
+    "simplebar": "^4.0.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "browser-sync": "^2.24.4",

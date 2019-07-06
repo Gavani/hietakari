@@ -1,0 +1,45 @@
+extends ../main-layout
+
+block variables
+  -
+    var title = "¤html_title¤";
+
+block content
+  include ../components/grand-menu 
+  +grand-menu('about')
+  include ../components/language 
+  +language('about')
+  include ../components/header
+  +header('about')
+  main(role="main").main
+    section.about
+      .container-fluid
+        .row
+          .col-12.col-lg-6.about__col-left
+            .about__wrapper
+              .about__head.text-uppercase
+                p ¤About_us¤
+              .about__desc.about__desc_left
+                p ¤About_Description¤
+                p ¤About_Description¤
+                p ¤About_Description¤
+              .about__img.about__img_left.d-none.d-lg-block
+                img(src="assets/img/contents/about-us.jpg", alt="Image" data-0-start="left:-30%; opacity: .4; " data-200="left:0;opacity: 1;" ).parallax
+          .col-12.col-lg-6.about__col-right
+            .about__wrapper
+              .about__img.about__img_right
+                img(src="assets/img/contents/about-us-2.jpg", alt="Image" data-0-start="right:-30%; opacity: .4; " data-200="right:0;opacity: 1;").parallax
+                img(src="assets/img/contents/about-us-1.jpg", alt="Image" data-0-start="right:-30%; opacity: .4; " data-200="right:0;opacity: 1;").parallax
+              .about__desc.about__desc_left
+                p.about__desc-head ¤our_philosophy¤
+                p ¤About_Description_philosophy¤
+                p ¤About_Description_philosophy¤ 
+              .about__img.about__img_left.d-block.d-lg-none
+                img(src="assets/img/contents/about-us.jpg", alt="Image").parallax
+    .navigate-top.navigate-top_skrollr.d-sm-none.d-flex.align-items.justify-content-center
+      .navigate-top__text.text-uppercase
+        p ¤Back_Top_Text¤
+      .navigate-top__icon
+        img(src="assets/img/icons/arrow-up.svg", alt="Icon")
+  include ../components/footer 
+  +footer('about')

@@ -1,0 +1,161 @@
+.cart-step{
+  .cart__order{
+    padding-top: 10px;
+  }
+  .cart__order-footer{
+    button{
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+.cart__delivery{
+  padding-top: 90px;
+  @include tablet{
+    padding-top: 67px;
+  }
+}
+.cart__delivery-head{
+  margin-bottom: 20px;
+  p{
+    @include europa(bold);
+    font-size: 14px;
+  }
+}
+.cart__delivery-head_margin{
+  margin-bottom: 35px;
+}
+.cart__delivery-billing{
+  margin-bottom: 50px;
+  @include tablet{
+    margin-bottom: 20px;
+  }
+}
+.cart__delivery-form{
+  label{
+    margin-bottom: 0;
+    cursor: pointer;
+    a, span{
+      font-size: 14px;
+      @include europa(light);
+      color: #ffffff;
+    }
+    a{
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    p{
+      font-size: 12px;
+      color: #939393;
+      margin-bottom: 8px;
+    }
+  }
+  textarea{
+    height: 150px;
+  }
+  .form-row{
+    .form-group{
+      margin-bottom: 20px;
+      &:first-child{
+        padding-right: 35px;
+        @include tablet{
+          padding-right: 5px;
+        }
+      }
+      &:nth-child(2){
+        padding-left: 35px;
+        @include tablet{
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+  .form-row_padding{
+    padding: 0 0 15px 0;
+  }
+}
+.back-to-cart{
+  a{
+    display: inline-block;
+    background: #393939;
+    color: #969696;
+    padding: 18px 35px;
+    @include europa(bold);
+    font-size: 15px;
+  }
+}
+.back-to-cart__phone-append{
+  .back-to-cart{
+    margin-top: 35px;
+    a{
+      display: block;
+      text-align: center;
+    }
+  }
+}
+.continue-confirmation{
+  text-align: right;
+  button{
+    border-width: 0;
+    background: #ffffff;
+    color: #000000;
+    @include europa(bold);
+    font-size: 15px;
+    padding: 18px 60px;
+    @include desktopxminlg{
+      padding: 18px 40px;
+    }
+  }
+}
+.date-label{
+  position: relative;
+  img{
+    position: absolute;
+    right: 10px;
+    top: 42px;
+    width: 11px;
+    transform: rotate(0deg);
+    transition: .13s linear;
+  }
+  input{
+    padding-right: 30px;
+    &:focus + img{
+      transform: rotate(-180deg);
+    }
+  }
+}
+.datepicker{
+  background: #292929 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(#000000, .45);
+  @include europa;
+  font-size: 14px;
+  thead{
+    @include europa(bold);
+    font-size: 16px;
+  }
+}
+.datepicker-dropdown.datepicker-orient-bottom:after{
+  border-bottom-color: #292929 !important;
+}
+.datepicker-dropdown.datepicker-orient-bottom:before{
+  border-bottom-color:  rgba(#000000, .6);
+}
+.datepicker td, .datepicker th{
+  width: 32px;
+  height: 32px;
+}
+.datepicker table tr td.day.focused, .datepicker table tr td.day:hover{
+  background: rgba(0, 0, 0, 0.35);
+}
+.datepicker table tr td.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active:hover{
+  background-image: linear-gradient(to bottom,#464646,#101010);
+}
+.datepicker table tr td span.active.active, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled.disabled, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active.disabled:hover.active, .datepicker table tr td span.active.disabled:hover.disabled, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.disabled:hover:hover, .datepicker table tr td span.active.disabled:hover[disabled], .datepicker table tr td span.active.disabled[disabled], .datepicker table tr td span.active:active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active:hover.disabled, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active:hover:hover, .datepicker table tr td span.active:hover[disabled], .datepicker table tr td span.active[disabled]{
+  background-image: linear-gradient(to bottom,#464646,#101010);
+}
+.datepicker .datepicker-switch:hover, .datepicker .next:hover, .datepicker .prev:hover, .datepicker table tr td span.focused, .datepicker table tr td span:hover, .datepicker tfoot tr th:hover{
+  background: rgba(0, 0, 0, 0.3);
+}

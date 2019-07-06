@@ -1,0 +1,288 @@
+extends ../main-layout
+
+block variables
+  -
+    var title = "¤html_title¤";
+
+block content
+  include ../components/grand-menu 
+  +grand-menu('product-show')
+  include ../components/language 
+  +language('product-show')
+  include ../components/header
+  +header('product-show')
+  main(role="main").main
+    section.product-show
+      .container-fluid
+        .row
+          .col-12
+            .navigate-back
+              a(href="¤Back_To_List_Link¤").d-flex.align-items-center.justify-content-left
+                .navigate-back__icon
+                  img(src="assets/img/icons/arrow-left.svg", alt="Icon")
+                .navigate-back__text.text-uppercase
+                  p ¤Back_To_List¤
+          .col-lg-4.col-md-5.col-12.product-show__col.product-show__col_left
+            .product-show__gallery-wrapper
+              .product-show__gallery
+                .product-show__gallery-item
+                  img(src="assets/img/contents/dyn_shower_screen-121_65.jpg", alt="Product Image")
+                .product-show__gallery-item
+                  img(src="assets/img/contents/dyn_789.jpg", alt="Product Image")
+              .product-show__gallery-thumbs
+                .product-show__gallery-thumbs-item
+                  img(src="assets/img/contents/dyn_shower_screen-121_65.jpg", alt="Product Image")
+                .product-show__gallery-thumbs-item
+                  img(src="assets/img/contents/dyn_789.jpg", alt="Product Image")
+            .product-show__append_desktop
+              .product-show__append-wrapper
+                .product-show__similar
+                  .product-show__similar-text.text-uppercase
+                    p ¤Similar_Products¤
+                  .product-show__similar-slider
+                    .product-show__similar-slider-item
+                      a(href="#").product-show__similar-slider-item-link
+                        .product-show__similar-slider-item-img
+                          img(src="assets/img/contents/dyn_shower_screen-121_62.jpg", alt="Image")
+                        .product-show__similar-slider-item-name.text-uppercase
+                          p ¤Similar_Product_Name_on_categ_show_prod¤
+                        .product-show__similar-slider-item-desc.text-uppercase
+                          p ¤Similar_Product_desc_on_categ_show_prod¤
+                    .product-show__similar-slider-item
+                      a(href="#").product-show__similar-slider-item-link
+                        .product-show__similar-slider-item-img
+                          img(src="assets/img/contents/dyn_shower_screen-121_62.jpg", alt="Image")
+                        .product-show__similar-slider-item-name.text-uppercase
+                          p ¤Similar_Product_Name_on_categ_show_prod¤
+                        .product-show__similar-slider-item-desc.text-uppercase
+                          p ¤Similar_Product_desc_on_categ_show_prod¤
+                    .product-show__similar-slider-item
+                      a(href="#").product-show__similar-slider-item-link
+                        .product-show__similar-slider-item-img
+                          img(src="assets/img/contents/dyn_shower_screen-121_61.jpg", alt="Image")
+                        .product-show__similar-slider-item-name.text-uppercase
+                          p ¤Similar_Product_Name_on_categ_show_prod¤
+                        .product-show__similar-slider-item-desc.text-uppercase
+                          p ¤Similar_Product_desc_on_categ_show_prod¤
+                    .product-show__similar-slider-item
+                      a(href="#").product-show__similar-slider-item-link
+                        .product-show__similar-slider-item-img
+                          img(src="assets/img/contents/dyn_shower_screen-121_63.jpg", alt="Image")
+                        .product-show__similar-slider-item-name.text-uppercase
+                          p ¤Categories_Show_Product_Similar_Product_Name¤
+                        .product-show__similar-slider-item-desc.text-uppercase
+                          p ¤Categories_Show_Product_Similar_Product_Description¤
+                .product-show__documents
+                  .product-show__documents-collapse-head.text-uppercase
+                    a(href="#documentsCollapse" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="documentsCollapse").collapse-btn
+                      span ¤Documents¤
+                      img(src="assets/img/icons/arrow-up.svg", alt="Icon")
+                  .product-show__documents-collapse-content.collapse.show#documentsCollapse
+                    .product-show__documents-collapse-content-item.d-flex.justify-content-between.align-items-center
+                      .product-show__documents-collapse-content-item-text
+                        p ¤Document_Name_on_categ_show_prod¤
+                      .product-show__documents-collapse-content-item-btn
+                        a(href="¤Categories_Show_Product_Document_Link¤" download="¤Categories_Show_Product_Document_Name¤") ¤Download¤
+                    .product-show__documents-collapse-content-item.d-flex.justify-content-between.align-items-center
+                      .product-show__documents-collapse-content-item-text
+                        p ¤Document_Name_on_categ_show_prod¤
+                      .product-show__documents-collapse-content-item-btn
+                        a(href="¤Categories_Show_Product_Document_Link¤" download="¤Categories_Show_Product_Document_Name¤") ¤Download¤
+          .col-lg-8.col-md-7.col-12.product-show__col.product-show__col_right
+            .product-show__head-text.text-uppercase
+              h1 ¤Product_Name_on_categ_show_prod_page¤
+            .product-show__info.d-flex
+              .product-show__info-left
+                .product-show__info-left-desc
+                  .product-show__info-left-desc-head
+                    p ¤Product_short_desc_on_categ_show_prod_page¤
+                  .product-show__info-left-desc-body
+                    p ¤Product_description_on_categ_show_prod_page¤
+                    p ¤Product_description_on_categ_show_prod_page¤
+                .product-show__info-left-collapse
+                  .product-show__info-left-collapse-head.text-uppercase
+                    a(href="#installCollapse" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="installCollapse").collapse-btn
+                      span ¤Install¤
+                      img(src="assets/img/icons/arrow-up.svg", alt="Icon")
+                  .product-show__info-left-collapse-content.collapse#installCollapse
+                    p ¤Product_istall_description_on_categ_show_prod_page¤
+                    a(href="¤Categories_Show_Product_Instalation_Description_Link¤" download="Installation Guide") ¤Product_istall_link_on_categ_show_prod_page¤
+                .product-show__info-left-additional.d-flex.flex-wrap
+                  .product-show__info-left-additional-item
+                    img(src="assets/img/icons/box.svg", alt="Icon")
+                    p ¤Product_delivery_time_on_categ_show_prod_page¤
+                  .product-show__info-left-additional-item
+                    img(src="assets/img/icons/checked.svg", alt="Icon")
+                    p ¤10_year_warranty¤
+              .product-show__info-right
+                .product-show__info-right-collapse.accordion#accordionCollapse
+                  .product-show__info-right-collapse-item
+                    .product-show__info-right-collapse-header
+                      a(href="#frameColorCollapse" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="frameColorCollapse").collapse-btn
+                        span ¤Frame_Color¤
+                        img(src="assets/img/icons/arrow-up.svg", alt="Icon")
+                    .product-show__info-right-collapse-body#frameColorCollapse.collapse(data-parent="#accordionCollapse")
+                      p ¤Frame_Color_description_on_categ_show_prod_page¤
+                      form(action="#").product-show__info-right-collapse-body-form
+                        label
+                          input(type="radio", name="productColor" checked)
+                          div.product-show__info-right-collapse-body-form_fake-radio ¤Frame_Color_name_on_categ_show_prod_page¤
+                        label
+                          input(type="radio", name="productColor")
+                          div.product-show__info-right-collapse-body-form_fake-radio ¤Frame_Color_name_on_categ_show_prod_page¤
+                        label
+                          input(type="radio", name="productColor")
+                          div.product-show__info-right-collapse-body-form_fake-radio ¤Frame_Color_name_on_categ_show_prod_page¤
+                  .product-show__info-right-collapse-item
+                    .product-show__info-right-collapse-header
+                      a(href="#glassColorCollapse" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="glassColorCollapse").collapse-btn
+                        span ¤Glass_Color¤
+                        img(src="assets/img/icons/arrow-up.svg", alt="Icon")
+                    .product-show__info-right-collapse-body#glassColorCollapse.collapse.show(data-parent="#accordionCollapse")
+                      p ¤Glass_Color_description_on_categ_show_prod_page¤
+                      p ¤Glass_Color_description_on_categ_show_prod_page¤
+                      form(action="#").product-show__info-right-collapse-body-form
+                        label
+                          input(type="radio", name="productColor" checked)
+                          div.product-show__info-right-collapse-body-form_fake-radio ¤Glass_Color_name_on_categ_show_prod_page¤
+                        label
+                          input(type="radio", name="productColor")
+                          div.product-show__info-right-collapse-body-form_fake-radio ¤Glass_Color_name_on_categ_show_prod_page¤
+                  .product-show__info-right-collapse-item
+                    .product-show__info-right-collapse-header
+                      a(href="#sizeCollapse" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sizeCollapse").collapse-btn
+                        span ¤Product_Size¤
+                        img(src="assets/img/icons/arrow-up.svg", alt="Icon")
+                    .product-show__info-right-collapse-body#sizeCollapse.collapse(data-parent="#accordionCollapse")
+                      p ¤Product_size_description_on_categ_show_prod_page¤
+                      p ¤Product_size_description_on_categ_show_prod_page¤
+                      form(action="#").product-show__info-right-collapse-body-form.d-flex.flex-wrap
+                        .product-show__info-right-collapse-body-form-select
+                          p ¤Product_size_part_on_categ_show_prod_page¤
+                          .custom-select-container
+                            select
+                              option(value="0") ¤Product_size_dimension_on_categ_show_prod_page¤
+                              option(value="1") ¤Product_size_dimension_on_categ_show_prod_page¤
+                              option(value="2") ¤Product_size_dimension_on_categ_show_prod_page¤
+                              option(value="3") ¤Product_size_dimension_on_categ_show_prod_page¤
+                          label.d-flex.align-items-center.checkbox-container
+                            input(type="checkbox", name="dimension")
+                            .fake-checkbox
+                            span ¤Product_size_checkbox_on_categ_show_prod_page¤
+                        .product-show__info-right-collapse-body-form-select
+                          p ¤Product_size_part_on_categ_show_prod_page¤
+                          .custom-select-container
+                            select
+                              option(value="0") ¤Product_size_dimension_on_categ_show_prod_page¤
+                              option(value="1") ¤Product_size_dimension_on_categ_show_prod_page¤
+                              option(value="2") ¤Product_size_dimension_on_categ_show_prod_page¤
+                              option(value="3") ¤Product_size_dimension_on_categ_show_prod_page¤
+                          label.d-flex.align-items-center.checkbox-container
+                            input(type="checkbox", name="dimension")
+                            .fake-checkbox
+                            span ¤Product_size_checkbox_on_categ_show_prod_page¤
+                        .product-show__info-right-collapse-body-form-select.product-show__info-right-collapse-body-form-select_input
+                          label
+                            p ¤Product_size_part_on_categ_show_prod_page¤
+                            input(type="number" value="500")
+                          label
+                            p ¤Product_size_part_on_categ_show_prod_page¤
+                            input(type="number" value="2000")
+                          label
+                            p ¤Product_size_part_on_categ_show_prod_page¤
+                            input(type="number" value="400")
+                      .total-dimensions
+                        p ¤The_total_width_of_the_selected_product_is¤:
+                        p 
+                          span ¤-_-_At_its_narrowest¤: 
+                          span ¤Product_size_narrowest_on_categ_show_prod_page¤
+                        p 
+                          span ¤—_At_its_widest¤:  
+                          span ¤Product_size_widest_on_categ_show_prod_page¤
+                      .product-show__info-right-collapse-body-img
+                        p ¤Product_size_description_on_categ_show_prod_page¤
+                        img(src="assets/img/contents/dyn_789.jpg", alt="Image")
+                  .product-show__info-right-collapse-item
+                    .product-show__info-right-collapse-header
+                      a(href="#accesoriesCollapse" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="accesoriesCollapse").collapse-btn
+                        span ¤Choose_Accessories¤
+                        img(src="assets/img/icons/arrow-up.svg", alt="Icon")
+                    .product-show__info-right-collapse-body#accesoriesCollapse.collapse(data-parent="#accordionCollapse")
+                      p ¤accesories_description_on_categ_show_prod_page¤
+                      p ¤accesories_description_on_categ_show_prod_page¤
+                      form(action="#").product-show__info-right-collapse-body-form
+                        label.d-flex.align-items-center.checkbox-container
+                          input(type="checkbox", name="dimension")
+                          .fake-checkbox
+                          span ¤accesories_checkbox_text_on_categ_show_prod_page¤
+                        label.d-flex.align-items-center.checkbox-container
+                          input(type="checkbox", name="dimension")
+                          .fake-checkbox
+                          span ¤accesories_checkbox_text_on_categ_show_prod_page¤
+            .product-show__total
+              .product-show__total-wrapper
+                .product-show__total-head.d-flex
+                  .product-show__total-head-left.product-show__total-left
+                    p.text-uppercase ¤Product¤
+                  .product-show__total-head-center.product-show__total-center
+                    p.text-uppercase ¤Product_Code¤
+                  .product-show__total-head-right.product-show__total-right
+                    p.text-uppercase ¤Price¤
+                .product-show__total-item.d-flex
+                  .product-show__total-item-left.product-show__total-left.d-flex
+                    .product-show__total-item-counter
+                      p ¤Counter¤
+                    .product-show__total-item-text
+                      p ¤Product_item_name_on_categ_show_prod_page¤
+                      p ¤Product_item_name_on_categ_show_prod_page¤
+                  .product-show__total-item-center.product-show__total-center
+                    p.product-show__total-item-phone.text-uppercase ¤Product_Code¤
+                    p ¤PRODUCT_ITEM_CODE¤
+                  .product-show__total-item-right.product-show__total-right.text-right
+                    p.product-show__total-item-phone.text-uppercase ¤Price¤
+                    p ¤PRODUCT_ITEM_PRICE¤
+                .product-show__total-item.d-flex
+                  .product-show__total-item-left.product-show__total-left.d-flex
+                    .product-show__total-item-counter
+                      p ¤Counter¤
+                    .product-show__total-item-text
+                      p ¤Product_item_name_on_categ_show_prod_page¤
+                      p ¤Product_item_name_on_categ_show_prod_page¤
+                  .product-show__total-item-center.product-show__total-center
+                    p.product-show__total-item-phone.text-uppercase ¤Product_Code¤
+                    p ¤PRODUCT_ITEM_CODE¤
+                  .product-show__total-item-right.product-show__total-right.text-right
+                    p.product-show__total-item-phone.text-uppercase ¤Pricet¤
+                    p  ¤PRODUCT_ITEM_PRICE¤
+                .product-show__total-footer.d-flex.justify-content-between
+                  .product-show__total-footer-total-text.text-uppercase
+                    p ¤Total¤
+                  .product-show__total-footer-total-price
+                    p ¤Product_item_total_price_on_categ_show_prod_page¤
+            .product-show__cart.d-flex
+              .product-show__cart-text
+                p ¤The_total_width_of_the_selected_product_is¤: 
+                p
+                  span ¤-_-_At_its_narrowest¤: 
+                  span ¤Product_size_narrowest_on_categ_show_prod_page¤
+                p
+                  span ¤—_At_its_widest¤: 
+                  span ¤Product_size_widest_on_categ_show_prod_page¤
+                p.product-show__cart-text_mt ¤Categories_Show_Product_TOtal_Width_Description¤
+              .product-show__cart-btn
+                button(name="addToBasket").text-uppercase ¤Add_To_Cart_Text¤
+            .product-show__append_phone
+            .navigate-container.d-flex
+              .navigate-back.d-block.d-md-none
+                a(href="#").d-flex.align-items-center.justify-content-left
+                  .navigate-back__icon
+                    img(src="assets/img/icons/arrow-left.svg", alt="Icon")
+                  .navigate-back__text.text-uppercase
+                    p ¤Back_To_List¤
+              .navigate-top.d-flex.align-items.justify-content-end
+                .navigate-top__text.text-uppercase
+                  p ¤Back_To_Top¤
+                .navigate-top__icon
+                  img(src="assets/img/icons/arrow-up.svg", alt="Icon")
+  include ../components/footer 
+  +footer('product-show')

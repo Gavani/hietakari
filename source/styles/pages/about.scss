@@ -1,0 +1,137 @@
+.about{
+  width: 880px;
+  margin: 0 auto;
+  @include laptop{
+    padding: 0 15px;
+  }
+  @media screen and (max-width: 890px){
+    width: 100%;
+  }
+  @include phone{
+    padding: 0;
+    width: 100%;
+  }
+}
+.about-header{
+  @include laptop{
+    height: auto;
+    padding-bottom: 30px;
+  }
+}
+.about-footer{
+  @include phone{    
+    height: auto;
+    padding-top: 45px;
+  }
+}
+.about__wrapper{
+  width: 370px;
+  @include phone{
+    width: 100%;
+  }
+}
+.about__col-left{
+  .about__wrapper{
+    margin-right: auto;
+    @include laptop{
+      margin: auto;
+    }
+  }
+  @include phone{
+    padding: 0;
+  }
+}
+.about__col-right{
+  .about__wrapper{
+    margin-left: auto;
+    @include laptop{
+      margin: auto;
+    }
+  }
+  @include phone{
+    padding: 0 0 45px 0;
+  }
+}
+.about__head{
+  margin-bottom: 50px;
+  @include laptop{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  @include phone{
+    margin-bottom: 30px;
+  }
+  p{
+    font-size: 31px;
+    letter-spacing: 2px;
+    @include phone{
+      font-size: 22px;
+    }
+  }
+}
+.about__desc{
+  margin-bottom: 75px;
+  @include laptop{
+    margin-bottom: 40px;
+  }
+  @include phone{
+    padding: 0 20px;
+  }
+  p{
+    @include europa(light);
+    font-size: 14px;
+    color: #939393;
+    margin-bottom: 30px;
+    line-height: 23px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  p.about__desc-head{
+    @include europa(light);
+    font-size: 17px;
+    color: #ffffff;
+  }
+}
+.about__img {
+  position: relative;
+}
+.about__img_left{
+  img{
+    width: 100%;
+  }
+}
+
+.about__img_right{
+  position: relative;
+  margin-bottom: 72px;
+  @include phone{
+    margin-bottom: 40px;
+    margin-top: 22%;
+  }
+  img{
+    &:first-child{
+      width: 322px;
+      @include phone{
+        width: 55%;
+      }
+    }
+    &:last-child{
+      width: 243px;
+      @include centered(y);
+      right: 0;
+      margin-right: -80px;
+      @include desktop{
+        margin-right: -20px;
+      }
+      @include phone{
+        width: 65%;
+        margin-right: -10%;
+        margin-top: -15%;
+      }
+    }
+  }
+}
+.parallax{
+  position: relative;
+}

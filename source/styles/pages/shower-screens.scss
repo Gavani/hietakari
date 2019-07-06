@@ -1,0 +1,16 @@
+.shower-header{
+  height: auto;
+  .navbar{
+    padding-bottom: 65px;
+    @include phone{
+      padding-bottom: 45px;
+    }
+  }
+}
+.shower__grand-menu{
+  background: rgba(#212121, .95);
+}
+.shower-footer{
+  height: auto;
+  padding-top: 50px;
+}

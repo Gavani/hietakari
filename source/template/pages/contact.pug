@@ -1,0 +1,79 @@
+extends ../main-layout
+
+block variables
+  -
+    var title = "¤html_title¤";
+
+block content
+  include ../components/grand-menu 
+  +grand-menu('contact')
+  include ../components/language 
+  +language('contact')
+  include ../components/header
+  +header('contact')
+  main(role="main").main.d-flex.flex-column.justify-content-center
+    .contact-bg
+    section.contact
+      .container-fluid
+        .row
+          .col-12
+            .contact__head-text.text-uppercase
+              p ¤Contact_Us¤
+          .col-12.col-md-6
+            .contact__list-wrapper
+              .contact__list-head-text
+                p ¤Finland¤
+              ul.contact__list
+                li.contact__item.contact__item_weight
+                  p ¤Hietakari_Yhtyma_Oy¤
+                li.contact__item
+                  p 
+                    span ¤address¤: 
+                    span ¤Contact_Address¤
+                li.contact__item
+                  p 
+                    span ¤phone¤: 
+                    span ¤Contact_Phone¤
+                li.contact__item
+                  p 
+                    span ¤e_mail¤: 
+                    span ¤Contact_Email¤
+            .contact__list-wrapper
+              .contact__list-head-text
+                p ¤Sweden¤
+              ul.contact__list
+                li.contact__item.contact__item_weight
+                  p ¤Sandriff_Group_Ab¤
+                li.contact__item
+                  p 
+                    span ¤address¤:  
+                    span ¤Contact_Address¤
+                li.contact__item
+                  p 
+                    span ¤phone¤:  
+                    span ¤Contact_Phone¤
+                li.contact__item
+                  p 
+                    span ¤e_mail¤:  
+                    span ¤Contact_Email¤
+          .col-12.col-md-6
+            .contact__list-wrapper
+              .contact__list-head-text
+                p ¤Lithuania¤
+              ul.contact__list
+                li.contact__item.contact__item_weight
+                  p ¤UAB_Sandriff_International¤
+                li.contact__item
+                  p 
+                    span ¤address¤:  
+                    span ¤Contact_Address¤
+                li.contact__item
+                  p 
+                    span ¤phone¤: 
+                    span ¤Contact_Phone¤
+                li.contact__item
+                  p 
+                    span ¤e_mail¤:  
+                    span ¤Contact_Email¤
+  include ../components/footer 
+  +footer('contact')

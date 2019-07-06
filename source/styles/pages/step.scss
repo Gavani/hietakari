@@ -1,0 +1,128 @@
+.step{
+  padding: 0 30px;
+  @include laptop{
+    padding: 0 15px;
+  }
+  @include phone{
+    padding: 0 5px;
+    width: 100%;
+  }
+}
+.step-header{
+  height: auto;
+  padding-bottom: 50px;
+}
+.step-footer{
+  .dn{
+    display: none !important;
+  }
+  .foter__col-right{
+    margin-left: auto;
+  }
+}
+.step__head{
+  margin-bottom: 20px;
+  p{
+    @include europa(bold);
+    font-size: 20px;
+    letter-spacing: 2px;
+    @media screen and(max-width: 345px) {
+      font-size: 16px;
+    }
+  }
+}
+.step__text{
+  margin-bottom: 25px;
+  p{
+    @include europa(light);
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 23px;
+    @include phone{
+      br{
+        display: none;
+      }
+    }
+  }
+}
+.step__text_gray{
+  p{
+    color: #939393;
+  }
+}
+.step__form-input{
+  margin-bottom: 30px;
+  input{
+    width: 370px;
+    text-align: center;
+    padding: 10px 17px 11px 17px;
+    @include europa(regular);
+    font-size: 15px;
+    @include phone{
+      width: 100%;
+    }
+  }
+}
+.step__form-btn{
+  button{
+    padding: 17px 50px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    @include europa(bold);
+    text-align: center;
+    border-width: 0;
+    @include phone{
+      width: 100%;
+    }
+  }
+}
+.step_3{
+  .step__head{
+    margin-bottom: 50px;
+    p{
+      letter-spacing: 1px;
+      @include phone{
+        font-size: 16px;
+      }
+    }
+  }
+  .step__form-btn{
+    button{
+      padding: 17px 35px;
+      @include phone{
+        width: auto;
+      }
+    }
+  }
+  .step__background{
+    background: url('../img/backgrounds/steklo-v-interere4.jpg') center no-repeat;
+  }
+}
+.step__background{
+  background-size: cover !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  &:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(#0F0F0F, .85);
+  }
+  @include phone{
+    display: none;
+  }
+}
+.step_5{
+  .step__head{
+    p{
+      @include phone{
+        font-size: 18px;
+      }
+    }
+  }
+}

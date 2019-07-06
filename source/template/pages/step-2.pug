@@ -1,0 +1,27 @@
+extends ../main-layout
+
+block variables
+  -
+    var title = "¤html_title¤";
+
+block content
+  include ../components/grand-menu 
+  +grand-menu('step')
+  include ../components/language 
+  +language('step')
+  include ../components/header
+  +header('step')
+  main(role="main").main.d-flex.justify-content-center.align-items-center
+    section.step.step_2.text-center
+      .container-fluid
+        .row
+          .col-12
+            .step__head.text-uppercase
+              p ¤CLICK_THE_LINK_SENT_TO_YOUR_EMAIL_ADDRESS¤
+            .step__text
+              p 
+                | ¤We_have_sent_an_activation_link_to_your_email_address.¤
+                br
+                | ¤Please_open_the_email_and_click_the_link_to_continue¤
+  include ../components/footer 
+  +footer('step')

@@ -1,0 +1,83 @@
+.slider{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  .carousel,
+  .carousel-inner,
+  .carousel-item{
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item{
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .carousel-control-next, 
+  .carousel-control-prev{
+    opacity: 1;
+    width: 136px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include laptop{
+      width: 107px;
+    }
+    @include phone{
+      width: 67px;
+    }
+  }
+  .carousel-control-next{
+    .slide__arrow-wrapper{
+      img{
+        margin-left: 1%;
+      }
+    }
+  }
+}
+.slide__arrow-wrapper{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(#121212, .6);
+  transition: .2s linear;
+  @include phone{
+    width: 40px;
+    height: 40px;
+  }
+  &:hover{
+    background: rgba(#121212, .75);
+  }
+  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.main-header{
+  .search-form{
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-size: 12px;
+      color: rgba(#ffffff, .65);
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      font-size: 12px;
+      color: rgba(#ffffff, .65);
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      font-size: 12px;
+      color: rgba(#ffffff, .65);
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      font-size: 12px;
+      color: rgba(#ffffff, .65);
+    }
+  }
+}

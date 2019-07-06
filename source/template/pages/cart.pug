@@ -1,0 +1,138 @@
+extends ../main-layout
+
+block variables
+  -
+    var title = "¤html_title¤";
+
+block content
+  include ../components/grand-menu 
+  +grand-menu('cart')
+  include ../components/language 
+  +language('cart')
+  include ../components/header
+  +header('cart')
+  main(role="main").main
+    section.cart.step-4
+      .container-fluid
+        .row
+          .col-12.cart__head-col
+            .cart__head-text
+              p.text-uppercase ¤Cart¤
+          .col-12.cart__product-col.d-flex
+            .cart__product
+              .cart__product-head.d-flex
+                .cart__product-head-left.cart__product_left.text-uppercase
+                  p ¤Product¤
+                .cart__product-head-center.cart__product_center.text-uppercase
+                  p ¤Product_Code¤
+                .cart__product-head-right.cart__product_right.text-uppercase.text-right.ml-auto
+                  p ¤Price¤
+              .cart__product-wrapper.d-flex
+                .cart__product-img
+                    img(src="assets/img/contents/dyn_shower_screen-121_65.jpg", alt="Product Image")
+                .cart__product-item-wrapper
+                  .cart__product-item-wrapper-row
+                    .cart__product-item-info-name.text-uppercase
+                      p ¤Product_Name_on_cart_page¤
+                    .cart__product-item.d-flex
+                      .cart__product-item-left.cart__product_item-left.text-uppercase
+                        .cart__product-item-info.d-flex
+                          .cart__product-item-info-counter
+                            p ¤Counter¤
+                          .cart__product-item-info-text
+                            p ¤Product_item_name_on_cart¤
+                            p ¤Product_item_name_on_cart¤
+                      .cart__product-item-center.cart__product_item-center.text-uppercase
+                        .cart__product-item_phone-text.d-block.d-md-none.text-uppercase
+                          p ¤Product_Code¤
+                        p ¤Product_item_Code¤
+                      .cart__product-item-right.cart__product_item-right.text-uppercase.text-right.ml-auto
+                        .cart__product-item_phone-text.d-block.d-md-none.text-uppercase
+                          p ¤Price¤
+                        p ¤Product_Item_Price_on_cart¤
+                    .cart__product-footer.d-flex
+                      .cart__product-footer-left.cart__product_item-left
+                        p ¤Additional text to product label, eg. Apartment 5 b 15¤
+                        .cart__product-footer-field.d-flex.aling-items-center
+                          input(type="text", name="additionalText")
+                          button.text-uppercase ¤Delete¤
+                      .cart__product-footer-center.cart__product_item-center.text-uppercase.d-flex.align-items-end
+                        p ¤Product_price¤
+                      .cart__product-footer-right.cart__product_item-right.d-flex.align-items-end.justify-content-end.text-uppercase.text-right.ml-auto
+                        p ¤Product_item_Total_Price_on_cart¤
+              .cart__product-wrapper.d-flex
+                .cart__product-img
+                    img(src="assets/img/contents/dyn_shower_screen-121_61.jpg", alt="Product Image")
+                .cart__product-item-wrapper
+                  .cart__product-item-wrapper-row
+                    .cart__product-item-info-name.text-uppercase
+                      p ¤PRODUCT_NAME_ON_CART_PAGE¤
+                    .cart__product-item.d-flex
+                      .cart__product-item-left.cart__product_item-left.text-uppercase
+                        .cart__product-item-info.d-flex
+                          .cart__product-item-info-counter
+                            p ¤Counter¤
+                          .cart__product-item-info-text
+                            p ¤Product_item_name_on_cart¤
+                            p ¤Product_item_name_on_cart¤
+                      .cart__product-item-center.cart__product_item-center.text-uppercase
+                        .cart__product-item_phone-text.d-block.d-md-none.text-uppercase
+                          p ¤Product_Code¤
+                        p ¤PRODUCT_ITEM_CODE¤
+                      .cart__product-item-right.cart__product_item-right.text-uppercase.text-right.ml-auto
+                        .cart__product-item_phone-text.d-block.d-md-none.text-uppercase
+                          p ¤Price_Text¤
+                        p ¤PRODUCT_ITEM_PRICE_ON_CART¤
+                    .cart__product-item.d-flex
+                      .cart__product-item-left.cart__product_item-left.text-uppercase
+                        .cart__product-item-info.d-flex
+                          .cart__product-item-info-counter
+                            p ¤Counter¤
+                          .cart__product-item-info-text
+                            p ¤Product_item_name_on_cart¤
+                            p ¤Product_item_name_on_cart¤
+                      .cart__product-item-center.cart__product_item-center.text-uppercase
+                        .cart__product-item_phone-text.d-block.d-md-none.text-uppercase
+                          p ¤Product_Code¤
+                        p ¤PRODUCT_ITEM_CODE¤
+                      .cart__product-item-right.cart__product_item-right.text-uppercase.text-right.ml-auto
+                        .cart__product-item_phone-text.d-block.d-md-none.text-uppercase
+                          p ¤Price_Text¤
+                        p ¤PRODUCT_ITEM_PRICE_ON_CART¤
+                    .cart__product-footer.d-flex
+                      .cart__product-footer-left.cart__product_item-left
+                        p ¤Additional text to product label, eg. Apartment 5 b 15¤
+                        .cart__product-footer-field.d-flex.aling-items-center
+                          input(type="text", name="additionalText")
+                          button.text-uppercase ¤Delete¤
+                      .cart__product-footer-center.cart__product_item-center.text-uppercase.d-flex.align-items-end
+                        p ¤PRODUCT_PRICE¤
+                      .cart__product-footer-right.cart__product_item-right.d-flex.align-items-end.justify-content-end.text-uppercase.text-right.ml-auto
+                        p ¤PRODUCT_ITEM_TOTAL_PRICE_ON_CART¤
+            .cart__order
+              .cart__order-wrapper.sticky
+                .cart__order-item.d-flex.justify-content-between.align-items-center
+                  .cart__order-item-left.text-uppercase
+                    p ¤Product_Vato¤
+                  .cart__order-item-right.text-right
+                    p ¤ProductVato_Price¤
+                .cart__order-item.d-flex.justify-content-between.align-items-center
+                  .cart__order-item-left.text-uppercase
+                    p ¤Cargo_vato¤
+                  .cart__order-item-right.text-right
+                    p ¤CargoVato_Price¤
+                .cart__order-item.d-flex.justify-content-between.align-items-center
+                  .cart__order-item-left.text-uppercase
+                    p ¤Vat¤
+                  .cart__order-item-right.text-right
+                    p ¤Vat_Price¤
+                .cart__order-item.cart__order-item_footer.d-flex.justify-content-between.align-items-center
+                  .cart__order-item-left.text-uppercase
+                    p ¤SUMMARY_Vat24¤
+                  .cart__order-item-right.text-right
+                    p ¤SummaryVat24_Price¤
+                .cart__order-footer
+                  button.text-uppercase ¤Place_Order¤
+          .col-12.sticky-stopper.sticky-stopper_delete
+  include ../components/footer 
+  +footer('cart')

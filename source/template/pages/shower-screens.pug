@@ -1,0 +1,76 @@
+extends ../main-layout
+
+block variables
+  -
+    var title = "¤html_title¤";
+
+block content
+  include ../components/grand-menu 
+  +grand-menu('shower')
+  include ../components/language 
+  +language('shower')
+  include ../components/header
+  +header('shower')
+  main(role="main").main
+    section.furniture-screens
+      .container-fluid
+        .row
+          .col-12
+            .furniture-screens__head-text.text-uppercase.text-center
+              p ¤Shower_Screens¤
+        .row
+          .col-12.col-sm-6.col-lg-4.furniture-screens__col
+            a(href="#").furniture-screens__item
+              .furniture-screens__item-img
+                img(src="assets/img/contents/dyn_shower_screen-121_64.jpg", alt="Product Image")
+              .furniture-screens__item-name.text-uppercase
+                p ¤Product_Name_on_shower_screens_page¤
+              .furniture-screens__item-desc.text-uppercase
+                p ¤Product_description_on_shower_screens_page¤
+          .col-12.col-sm-6.col-lg-4.furniture-screens__col
+            a(href="#").furniture-screens__item
+              .furniture-screens__item-img
+                img(src="assets/img/contents/dyn_shower_screen-121_65.jpg", alt="Product Image")
+              .furniture-screens__item-name.text-uppercase
+                p ¤Product_Name_on_shower_screens_page¤
+              .furniture-screens__item-desc.text-uppercase
+                p ¤Product_description_on_shower_screens_page¤
+          .col-12.col-sm-6.col-lg-4.furniture-screens__col
+            a(href="#").furniture-screens__item
+              .furniture-screens__item-img
+                img(src="assets/img/contents/dyn_shower_screen-121_66.jpg", alt="Product Image")
+              .furniture-screens__item-name.text-uppercase
+                p ¤Product_Name_on_shower_screens_page¤
+              .furniture-screens__item-desc.text-uppercase
+                p ¤Product_description_on_shower_screens_page¤
+          .col-12.col-sm-6.col-lg-4.furniture-screens__col
+            a(href="#").furniture-screens__item
+              .furniture-screens__item-img
+                img(src="assets/img/contents/dyn_shower_screen-121_62.jpg", alt="Product Image")
+              .furniture-screens__item-name.text-uppercase
+                p ¤Product_Name_on_shower_screens_page¤
+              .furniture-screens__item-desc.text-uppercase
+                p ¤Product_description_on_shower_screens_page¤
+          .col-12.col-sm-6.col-lg-4.furniture-screens__col
+            a(href="#").furniture-screens__item
+              .furniture-screens__item-img
+                img(src="assets/img/contents/dyn_shower_screen-121_61.jpg", alt="Product Image")
+              .furniture-screens__item-name.text-uppercase
+                p ¤Product_Name_on_shower_screens_page¤
+              .furniture-screens__item-desc.text-uppercase
+                p ¤Product_description_on_shower_screens_page¤
+          .col-12.col-sm-6.col-lg-4.furniture-screens__col
+            .furniture-screens__item
+              .furniture-screens__item-img
+                img(src="assets/img/contents/dyn_shower_screen-121_63.jpg", alt="Product Image")
+              .furniture-screens__item-name.text-uppercase
+                p ¤Product_Name_on_shower_screens_page¤
+              .furniture-screens__item-desc.text-uppercase
+                p ¤Product_description_on_shower_screens_page¤
+    .navigate-top.d-sm-none.d-flex.align-items.justify-content-center
+      .navigate-top__text.text-uppercase
+        p back to top
+      .navigate-top__icon
+        img(src="assets/img/icons/arrow-up.svg", alt="Icon")
+  include ../components/footer 
+  +footer('shower')

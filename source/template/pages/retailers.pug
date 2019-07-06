@@ -1,0 +1,169 @@
+extends ../main-retailers
+
+block variables
+  -
+    var title = "¤html_title¤";
+
+block content
+  include ../components/grand-menu 
+  +grand-menu('shower')
+  include ../components/language 
+  +language('shower')
+  include ../components/header
+  +header('shower')
+  main(role="main").main
+    section.map
+      .container-fluid
+        .row
+          .col-12
+            .map__head-text.text-uppercase.text-center
+              p ¤retailers¤
+      .map__wrapp
+        .map__zoom
+          .map__zoom-container.map__zoom-in
+            img(src="assets/img/icons/zoom-in.svg", alt="Icon")
+          .map__zoom-container.map__zoom-out
+            img(src="assets/img/icons/zoom-out.svg", alt="Icon")
+        #map
+    section.retailers
+      .container-fluid
+        .row
+          .col-lg-3.col-sm-4.col-6.retailers__col
+            .retailers__title.text-uppercase
+              p ¤ÄÄNEKOSKI¤
+            .retailers__name
+              p ¤K-Rauta Äänekoski¤
+              p ¤Rautakumppani Oy¤
+            .retailers__address
+              p ¤Rahastajantie 1¤
+              p ¤44100 ÄÄNEKOSKI¤
+            .retailers__link
+              a(href="#") Kartta
+          .col-lg-3.col-sm-4.col-6.retailers__col
+            .retailers__title.text-uppercase
+              p ¤ÄHTÄRI¤
+            .retailers__name
+              p ¤K-Rauta Ähtäri¤
+              p ¤Mäkelän Rauta Oy¤
+            .retailers__address
+              p ¤Jokenkuja 4¤
+              p ¤63700 ÄHTÄRI¤
+            .retailers__link
+              a(href="#") Kartta
+          .col-lg-3.col-sm-4.col-6.retailers__col
+            .retailers__title.text-uppercase
+              p ¤ALAJÄRVI¤
+            .retailers__name
+              p ¤K-Rauta Ähtäri¤
+              p ¤Mäkelän Rauta Oy¤
+            .retailers__address
+              p ¤Jokenkuja 4¤
+              p ¤63700 ÄHTÄRI¤
+            .retailers__link
+              a(href="#") Kartta
+          .col-lg-3.col-sm-4.col-6.retailers__col
+            .retailers__title.text-uppercase
+              p ¤ALAVIESKA¤
+            .retailers__name
+              p ¤K-Rauta Ähtäri¤
+              p ¤Mäkelän Rauta Oy¤
+            .retailers__address
+              p ¤Jokenkuja 4¤
+              p ¤63700 ÄHTÄRI¤
+            .retailers__link
+              a(href="#") Kartta
+          .col-lg-3.col-sm-4.col-6.retailers__col
+            .retailers__title.text-uppercase
+              p ¤ÄÄNEKOSKI¤
+            .retailers__name
+              p ¤K-Rauta Äänekoski¤
+              p ¤Rautakumppani Oy¤
+            .retailers__address
+              p ¤Rahastajantie 1¤
+              p ¤44100 ÄÄNEKOSKI¤
+            .retailers__link
+              a(href="#") Kartta
+          .col-lg-3.col-sm-4.col-6.retailers__col
+            .retailers__title.text-uppercase
+              p ¤ÄHTÄRI¤
+            .retailers__name
+              p ¤K-Rauta Ähtäri¤
+              p ¤Mäkelän Rauta Oy¤
+            .retailers__address
+              p ¤Jokenkuja 4¤
+              p ¤63700 ÄHTÄRI¤
+            .retailers__link
+              a(href="#") Kartta
+          .col-lg-3.col-sm-4.col-6.retailers__col
+            .retailers__title.text-uppercase
+              p ¤ALAJÄRVI¤
+            .retailers__name
+              p ¤K-Rauta Ähtäri¤
+              p ¤Mäkelän Rauta Oy¤
+            .retailers__address
+              p ¤Jokenkuja 4¤
+              p ¤63700 ÄHTÄRI¤
+            .retailers__link
+              a(href="#") Kartta
+          .col-lg-3.col-sm-4.col-6.retailers__col
+            .retailers__title.text-uppercase
+              p ¤ALAVIESKA¤
+            .retailers__name
+              p ¤K-Rauta Ähtäri¤
+              p ¤Mäkelän Rauta Oy¤
+            .retailers__address
+              p ¤Jokenkuja 4¤
+              p ¤63700 ÄHTÄRI¤
+            .retailers__link
+              a(href="#") Kartta
+          .col-lg-3.col-sm-4.col-6.retailers__col
+            .retailers__title.text-uppercase
+              p ¤ÄÄNEKOSKI¤
+            .retailers__name
+              p ¤K-Rauta Äänekoski¤
+              p ¤Rautakumppani Oy¤
+            .retailers__address
+              p ¤Rahastajantie 1¤
+              p ¤44100 ÄÄNEKOSKI¤
+            .retailers__link
+              a(href="#") Kartta
+          .col-lg-3.col-sm-4.col-6.retailers__col
+            .retailers__title.text-uppercase
+              p ¤ÄHTÄRI¤
+            .retailers__name
+              p ¤K-Rauta Ähtäri¤
+              p ¤Mäkelän Rauta Oy¤
+            .retailers__address
+              p ¤Jokenkuja 4¤
+              p ¤63700 ÄHTÄRI¤
+            .retailers__link
+              a(href="#") Kartta
+          .col-lg-3.col-sm-4.col-6.retailers__col
+            .retailers__title.text-uppercase
+              p ¤ALAJÄRVI¤
+            .retailers__name
+              p ¤K-Rauta Ähtäri¤
+              p ¤Mäkelän Rauta Oy¤
+            .retailers__address
+              p ¤Jokenkuja 4¤
+              p ¤63700 ÄHTÄRI¤
+            .retailers__link
+              a(href="#") Kartta
+          .col-lg-3.col-sm-4.col-6.retailers__col
+            .retailers__title.text-uppercase
+              p ¤ALAVIESKA¤
+            .retailers__name
+              p ¤K-Rauta Ähtäri¤
+              p ¤Mäkelän Rauta Oy¤
+            .retailers__address
+              p ¤Jokenkuja 4¤
+              p ¤63700 ÄHTÄRI¤
+            .retailers__link
+              a(href="#") Kartta
+    .navigate-top.d-sm-none.d-flex.align-items.justify-content-center
+      .navigate-top__text.text-uppercase
+        p back to top
+      .navigate-top__icon
+        img(src="assets/img/icons/arrow-up.svg", alt="Icon")
+  include ../components/footer 
+  +footer('shower')

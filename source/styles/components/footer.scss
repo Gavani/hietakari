@@ -1,0 +1,83 @@
+.footer{
+  position: relative;
+  z-index: 2;
+  padding: 0 30px;
+  height: 165px;
+  background: linear-gradient( to top, rgba(#000000, .5), rgba(#545454, .0));
+  display: flex;
+  @include laptop{
+    padding: 0;
+  }
+  .container-fluid{
+    margin-top: auto;
+    padding-bottom: 45px;
+    @include phone{
+      padding-bottom: 25px;
+    }
+  }
+}
+.footer__list_menu{
+  margin-left: -55px;
+  @include desktopminlg{
+    margin-left: -45px;
+  }
+  @include desktopxminlg{
+    margin-left: -35px;
+  }
+  @include desktop{
+    margin-left: -35px;
+  }
+  .footer__list-item{
+    margin-left: 55px;
+    @include desktopminlg{
+      margin-left: 45px;
+    }
+    @include desktopxminlg{
+      margin-left: 35px;
+    }
+    @include desktop{
+      margin-left: 23px;
+    }
+    a{
+      font-size: 14px;
+      color: #ffffff;
+      letter-spacing: 1.5px;
+      @include desktop{
+        font-size: 12px;
+      }
+    }
+  }
+}
+.footer__list_pay{
+  .footer__list-item{
+    margin-left: 20px;
+    img{
+      max-width: 35px;
+    }
+  }
+}
+.footer__list_socials{
+  @include laptop{
+    justify-content: center !important;
+    margin-left: -15px;
+  }
+  .footer__list-item{
+    margin-left: 15px;
+    a{
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #5F6462;
+      position: relative;
+      img{
+        @include centered;
+      }
+    }
+  }
+}
+.footer__list-item_last{
+  a{
+    background: transparent !important;
+  }
+}

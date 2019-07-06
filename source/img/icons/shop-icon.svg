@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.968" height="18.445" viewBox="0 0 17.968 18.445">
+  <g id="shop_icon" data-name="shop icon" transform="translate(-1232.123 -45.344)">
+    <g id="Path_21" data-name="Path 21" transform="translate(1233 49)" fill="none">
+      <path d="M.69,0H15.458l1.633,14.789H-.877Z" stroke="none"/>
+      <path d="M 2.488898277282715 2.000004768371582 L 1.345976829528809 12.78916454315186 L 14.85795783996582 12.78916454315186 L 13.66667747497559 2.000004768371582 L 2.488898277282715 2.000004768371582 M 0.6895732879638672 4.76837158203125e-06 L 15.45800399780273 4.76837158203125e-06 L 17.09094429016113 14.78916454315186 L -0.8770771026611328 14.78916454315186 L 0.6895732879638672 4.76837158203125e-06 Z" stroke="none" fill="#fff"/>
+    </g>
+    <path id="Path_20" data-name="Path 20" d="M380.176,632.285a2.911,2.911,0,1,0-5.767,0" transform="translate(863.707 -582.63)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

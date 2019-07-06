@@ -1,0 +1,175 @@
+extends ../main-layout
+
+block variables
+  -
+    var title = "¤html_title¤";
+
+block content
+  include ../components/grand-menu 
+  +grand-menu('cart')
+  include ../components/language 
+  +language('cart')
+  include ../components/header
+  +header('cart')
+  main(role="main").main
+    section.cart.cart-step
+      .container-fluid
+        .row
+          .col-12.cart__head-col
+            .cart__head-text
+              p.text-uppercase ¤Delivery_Information¤
+          .col-12.cart__product-col.d-flex
+            .cart__product
+              .cart__product-head.d-flex
+                .cart__product-head-left.cart__product_left.text-uppercase
+                  p ¤Product¤
+                .cart__product-head-center.cart__product_center.text-uppercase
+                  p ¤Product_Code¤
+                .cart__product-head-right.cart__product_right.text-uppercase.text-right.ml-auto
+                  p ¤Price¤
+              .cart__product-wrapper.d-flex
+                .cart__product-img
+                    img(src="assets/img/contents/dyn_shower_screen-121_65.jpg", alt="Product Image")
+                .cart__product-item-wrapper
+                  .cart__product-item-wrapper-row
+                    .cart__product-item-info-name.text-uppercase
+                      p ¤Product_name_on_step4¤
+                    .cart__product-item.d-flex
+                      .cart__product-item-left.cart__product_item-left.text-uppercase
+                        .cart__product-item-info.d-flex
+                          .cart__product-item-info-counter
+                            p ¤Counter¤
+                          .cart__product-item-info-text
+                            p ¤Product_item_name_on_step4¤ 
+                            p ¤Product_item_name_on_step4¤
+                      .cart__product-item-center.cart__product_item-center.text-uppercase
+                        .cart__product-item_phone-text.d-block.d-md-none.text-uppercase
+                          p ¤Product_Code¤
+                        p ¤Product_item_Code¤
+                      .cart__product-item-right.cart__product_item-right.text-uppercase.text-right.ml-auto
+                        .cart__product-item_phone-text.d-block.d-md-none.text-uppercase
+                          p ¤Price¤
+                        p ¤Product_Item_Price_on_step4¤
+                    .cart__product-footer.d-flex
+                      .cart__product-footer-left.cart__product_item-left
+                        p ¤Additional text to product label, eg. Apartment 5 b 15¤
+                        .cart__product-footer-field.d-flex.aling-items-center
+                          input(type="text", name="additionalText")
+                          button.text-uppercase ¤Delete_Text¤
+                      .cart__product-footer-center.cart__product_item-center.text-uppercase.d-flex.align-items-end
+                        p ¤Product_price¤
+                      .cart__product-footer-right.cart__product_item-right.d-flex.align-items-end.justify-content-end.text-uppercase.text-right.ml-auto
+                        p ¤Product_item_Total_Price_on_step4¤
+              .cart__delivery
+                form.cart__delivery-form
+                  .cart__delivery-billing
+                    .cart__delivery-head.text-uppercase
+                      p ¤Billing_Address¤
+                    .form-row
+                      .form-group.col-md-6.col-12
+                        label(for="name1").d-block
+                          p ¤Name_1¤
+                        input(type="text")#name1
+                      .form-group.col-md-6.col-12
+                        label(for="name2").d-block
+                          p ¤Name_2¤
+                        input(type="text")#name2
+                    .form-row
+                      .form-group.col-md-6.col-12
+                        label(for="address1").d-block
+                          p ¤Street_1¤
+                        input(type="text")#address1
+                      .form-group.col-md-6.col-12
+                        label(for="address2").d-block
+                          p ¤Street_2¤
+                        input(type="text")#address2
+                    .form-row
+                      .form-group.col-md-6.col-12
+                        label(for="postal").d-block
+                          p ¤Postal_Code¤
+                        input(type="text")#postal
+                      .form-group.col-md-6.col-12
+                        label(for="city").d-block
+                          p ¤City¤
+                        input(type="text")#city
+                    .form-row
+                      .form-group.col-md-6.col-12
+                        label.d-block
+                          p ¤Country¤
+                        .custom-select-container
+                          select(name="country")
+                            option(selected) ¤Product_Billing_Country_Select_Name¤
+                            option(value="1").same-as-selected ¤Product_Billing_Country_Select_Name¤
+                            option(value="2") ¤Product_Billing_Country_Select_Name¤
+                            option(value="3") ¤Product_Billing_Country_Select_Name¤
+                            option(value="4") ¤Product_Billing_Country_Select_Name¤ 
+                      .form-group.col-md-6.col-12
+                        label(for="phone").d-block
+                          p ¤Phone¤
+                        input(type="number")#phone
+                  .cart__delivery-address
+                    .cart__delivery-head.cart__delivery-head_margin.text-uppercase
+                      p ¤Delivery_Address¤
+                    .form-row.form-row_padding
+                      .form-group.col-12
+                        label.d-flex.align-items-center.checkbox-container
+                          input(type="checkbox", name="billingAddress" checked)
+                          .fake-checkbox
+                          span ¤Same_ass_billing_address¤
+                    .form-row.form-row_padding
+                      .form-group.col-md-6.col-12
+                        label(for="date").d-block.date-label
+                          p ¤Earliest_allowed_delivery_date¤
+                          input(type="text" autocomplete="off" data-provide="datepicker")#date
+                          img(src="assets/img/icons/arrow-select.svg", alt="Icon")
+                    .form-row.form-row_padding
+                      .form-group.col-md-6.col-12
+                        label(for="instructions").d-block
+                          p ¤Delivery_Instructions¤
+                        textarea#instructions
+                      .form-group.col-md-6.col-12
+                        label(for="additionalInfo").d-block
+                          p ¤Additional_Informationt¤
+                        textarea#additionalInfo
+                    .form-row.form-row_padding
+                      .form-group.col-12
+                        label.d-flex.align-items-center.checkbox-container
+                          input(type="checkbox", name="agreemnet")
+                          .fake-checkbox
+                          span 
+                            | ¤I_accept_the_
+                            a(href="¤Product_Billing_Online_Store_Agreement_Link¤") Online_Store_Agreement¤
+                    .form-row.d-none.d-md-flex
+                      .form-group.col-6.back-to-cart__desktop-append
+                        .back-to-cart
+                          a(href="#").text-uppercase ¤Back_To_Cart¤
+                      .form-group.col-6.continue-confirmation
+                        button(type="submit").text-uppercase ¤Continue_To_Confirmation¤
+            .cart__order
+              .cart__order-wrapper.sticky
+                .cart__order-item.d-flex.justify-content-between.align-items-center
+                  .cart__order-item-left.text-uppercase
+                    p ¤Product_Vato¤
+                  .cart__order-item-right.text-right
+                    p ¤ProductVato_Price¤
+                .cart__order-item.d-flex.justify-content-between.align-items-center
+                  .cart__order-item-left.text-uppercase
+                    p ¤Cargo_vato¤
+                  .cart__order-item-right.text-right
+                    p ¤CargoVato_Price¤
+                .cart__order-item.d-flex.justify-content-between.align-items-center
+                  .cart__order-item-left.text-uppercase
+                    p ¤Vat¤
+                  .cart__order-item-right.text-right
+                    p ¤Vat_Price¤
+                .cart__order-item.cart__order-item_footer.d-flex.justify-content-between.align-items-center
+                  .cart__order-item-left.text-uppercase
+                    p ¤SUMMARY_Vat24¤
+                  .cart__order-item-right.text-right
+                    p ¤SummaryVat24_Price¤
+                .cart__order-footer
+                  button.text-uppercase ¤Continue_To_Confirmation¤
+            .back-to-cart__phone-append.d-block.d-md-none
+          .col-12.sticky-stopper.sticky-stopper_delete
+  include ../components/footer 
+  +footer('cart')

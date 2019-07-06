@@ -1,0 +1,73 @@
+extends ../main-layout
+
+block variables
+  -
+    var title = "¤html_title¤";
+
+block content
+  include ../components/grand-menu 
+  +grand-menu('inspiration')
+  include ../components/language 
+  +language('inspiration')
+  include ../components/header
+  +header('inspiration')
+  main(role="main").main
+    section.insipiration
+      .container-fluid
+        .grid
+          .grid-sizer
+          .grid-item.inspiration__col
+            .inspiration__wrapper
+              a(href="#")
+                img(src="assets/img/contents/dyn_shower_enclosures-1.jpg", alt="Image")
+          .grid-item.inspiration__col
+            .inspiration__wrapper
+              a(href="#")
+                img(src="assets/img/contents/dyn_alcove_fitting-211+212_61.jpg", alt="Image")
+          .grid-item.inspiration__col
+            .inspiration__wrapper
+              a(href="#")
+                img(src="assets/img/contents/dyn_alcove_fitting-512+513_21_Lefdt.jpg", alt="Image")
+          .grid-item.inspiration__col
+            .inspiration__wrapper
+              a(href="#")
+                img(src="assets/img/contents/dyn_alcove_fitting-811+812_81.jpg", alt="Image")
+          .grid-item.inspiration__col
+            .inspiration__wrapper
+              a(href="#")
+                img(src="assets/img/contents/dyn_glazing-704_91.jpg", alt="Image")
+          .grid-item.inspiration__col
+            .inspiration__wrapper
+              a(href="#")
+                img(src="assets/img/contents/dyn_glazing-703_91.jpg", alt="Image")
+          .grid-item.inspiration__col
+            .inspiration__wrapper
+              a(href="#")
+                img(src="assets/img/contents/dyn_glazing-715_91.jpg", alt="Image")
+          .grid-item.inspiration__col
+            .inspiration__wrapper
+              a(href="#")
+                img(src="assets/img/contents/dyn_alcove_fitting-811+812_81.jpg", alt="Image")
+          .grid-item.inspiration__col
+            .inspiration__wrapper
+              a(href="#")
+                img(src="assets/img/contents/dyn_glazing-772.jpg", alt="Image")
+          .grid-item.inspiration__col
+            .inspiration__wrapper
+              a(href="#")
+                img(src="assets/img/contents/dyn_glazing-779.jpg", alt="Image")
+          .grid-item.inspiration__col
+            .inspiration__wrapper
+              a(href="#")
+                img(src="assets/img/contents/dyn_glazing-648_21.jpg", alt="Image")
+          .grid-item.inspiration__col
+            .inspiration__wrapper
+              a(href="#")
+                img(src="assets/img/contents/dyn_glazing-818.jpg", alt="Image")
+    .navigate-top.d-sm-none.d-flex.align-items.justify-content-center
+      .navigate-top__text.text-uppercase
+        p ¤Back_To_Top_Text¤
+      .navigate-top__icon
+        img(src="assets/img/icons/arrow-up.svg", alt="Icon")
+  include ../components/footer 
+  +footer('inspiration')

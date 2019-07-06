@@ -1,0 +1,62 @@
+mixin header (additionClass)
+  header(class=`header ${additionClass}-header`)
+    .container-fluid
+      .row
+        .col-12
+          nav.navbar.navbar-expand-lg
+            a.navbar-brand(href="index.html")
+              img(src="assets/img/logo/logo.svg", alt="Logo")
+            button.navbar-toggler
+              .hamburger-icon
+                span
+                span
+                span
+                span
+            .collapse.navbar-collapse.drilldown
+              .header__right-item.d-block.d-lg-none
+                form.search-form
+                  input(type="search", name="search", placeholder="¤Search_Product¤" autocomplete="off")
+                  button
+                    img(src="assets/img/icons/search-icon.svg", alt="Search icon")
+              ul.navbar-nav
+                li.nav-item
+                  a(href="inspiration.html").nav-link.text-uppercase ¤Inspiration¤ 
+                li.nav-item.nav-item__grand-menu-open
+                  a(href="#").nav-link.text-uppercase ¤Web_Store¤ 
+                li.nav-item.ml-auto
+                  a(href="#").nav-link.nav-link__not-hover.d-flex.align-items-center.shipping
+                    img(src="assets/img/icons/shipping.png", alt="Icon")
+                    p ¤Worldwide_Shipping¤ 
+                li.nav-item.d-block.d-lg-none
+                  a(href="about.html").nav-link.text-uppercase ¤About_us¤ 
+                li.nav-item.d-block.d-lg-none
+                  a(href="retailers.html").nav-link.text-uppercase ¤Retailers¤ 
+              //- ul.navbar-nav.drilldown-second.drilldown-second_hide.drilldown-menus.d-block.d-lg-none
+              //-   li.nav-item
+              //-     a(href="shower-screens.html").nav-link.text-uppercase ¤Shower_Screens¤ 
+              //-   li.nav-item
+              //-     a(href="shower-enclosures.html").nav-link.text-uppercase ¤Shower_Enclosures¤ 
+              //-   li.nav-item
+              //-     a(href="#").nav-link.text-uppercase ¤Alcove_Fittings¤ 
+              //-   li.nav-item
+              //-     a(href="#").nav-link.text-uppercase ¤Doors_Panels¤ 
+              //-   li.navigate-back
+              //-     a(href="#").d-flex.align-items-center.justify-content-center
+              //-       .navigate-back__icon
+              //-         img(src="assets/img/icons/arrow-left.svg", alt="Icon")
+              //-       .navigate-back__text.text-uppercase
+              //-         p ¤Back¤ 
+            .header__right
+              ul.header__right-list
+                li.header__right-item.d-none.d-lg-block.language__open-icon
+                  img(src="assets/img/icons/lang.svg", alt="Language icon")
+                li.header__right-item.d-none.d-lg-block
+                  form.search-form
+                    input(type="search", name="search", placeholder="¤Search_Product¤" autocomplete="off")
+                    button
+                      img(src="assets/img/icons/search-icon.svg", alt="Search icon")
+                li.header__right-item.header__right-item_basket
+                  a(href="cart.html")
+                    .header__right-item_basket-count 
+                      p 2
+                    img(src="assets/img/icons/shop-icon.svg", alt="Shop icon")

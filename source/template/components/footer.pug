@@ -1,0 +1,38 @@
+mixin footer(additionClass)
+  footer(class=`footer ${additionClass}-footer`)
+    .container-fluid
+      .row
+        .col-4.d-none.foter__col.d-lg-flex.align-items-center
+          ul.footer__list.footer__list_menu.d-flex.align-items-center
+            li.footer__list-item.text-uppercase
+              a(href="about.html") ¤Abou_us¤          
+            li.footer__list-item.text-uppercase
+              a(href="retailers.html") ¤Retailers¤ 
+            li.footer__list-item.text-uppercase.dn
+              a(href="contact.html") ¤Contact_us¤
+        .col-4.d-none.foter__col.d-lg-flex.align-items-center.justify-content-center.dn
+          ul.footer__list.footer__list_pay.d-flex.align-items-center.justify-content-center
+            li.footer__list-item
+              img(src="assets/img/icons/visa.svg", alt="Icon")
+            li.footer__list-item
+              img(src="assets/img/icons/mastercard.svg", alt="Icon")
+            li.footer__list-item
+              img(src="assets/img/icons/bank.svg", alt="Icon")
+            li.footer__list-item
+              img(src="assets/img/icons/Path 51.png", alt="Icon")
+            li.footer__list-item
+              img(src="assets/img/icons/Group 50.png", alt="Icon")
+        .col-lg-4.col-12.foter__col.foter__col-right
+          ul.footer__list.footer__list_socials.d-flex.align-items-center.justify-content-end
+            li.footer__list-item.dn
+              a(href="#")
+                img(src="assets/img/icons/yt.svg", alt="Youtube icon")
+            li.footer__list-item
+              a(href="#")
+                img(src="assets/img/icons/insta.svg", alt="Instagram icon")
+            li.footer__list-item
+              a(href="#")
+                img(src="assets/img/icons/facebook.svg", alt="Facebook icon")
+            li.footer__list-item.footer__list-item_last
+              a(href="#")
+                img(src="assets/img/icons/design by finland.png", alt="finland icon")

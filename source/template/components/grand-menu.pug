@@ -1,0 +1,321 @@
+mixin grand-menu(additionClass)
+  section(class=`grand-menu ${additionClass}__grand-menu`)
+    .grand-menu__close-icon.ml-auto
+      a(href="#").text-uppercase 
+        span
+        span
+    .container-fluid
+      .col-12
+        .grand-menu__wrapper.tabs
+          .grand-menu__top.grand-menu__top_head
+            ul.grand-menu__top-list.d-flex.align-items-center.tabs__list
+              li.nav-item.grand-menu__top-item.nav-item_active.tabs__item
+                a(href="#").text-uppercase.tabs__link ¤Bathrooms¤ 
+              li.nav-item.grand-menu__top-item.tabs__item
+                a(href="#").text-uppercase.tabs__link 
+                  | ¤other 
+                  br
+                  | spaces¤ 
+              li.nav-item.grand-menu__top-item.tabs__item
+                a(href="#").text-uppercase.tabs__link ¤Accessoires¤
+          .tabs__content#grandMenuContent
+            .tabs__content-item.tabs__content-item_active
+              .grand-menu__top
+                ul.grand-menu__top-list.d-flex.align-items-center
+                  li.nav-item.grand-menu__top-item.nav-item_active
+                    a(href="shower-screens.html").text-uppercase 
+                      | ¤Shower 
+                      br
+                      | Screens¤ 
+                  li.nav-item.grand-menu__top-item
+                    a(href="shower-enclosures.html").text-uppercase 
+                      | ¤Shower 
+                      br
+                      | Enclosures¤ 
+                  li.nav-item.grand-menu__top-item
+                    a(href="#").text-uppercase 
+                      | ¤Alcove 
+                      br
+                      | Fittings¤ 
+              .grand-menu__filter    
+                .grand-menu__filter-body
+                  .grand-menu__filter-body-wrapper(data-simplebar)
+                    .grand-menu__filter-body-row.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤series¤:
+                      ul.grand-menu__filter-body-list.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤infina¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤fenic¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤vetro¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤blak¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤wall¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤glisse¤
+                    .grand-menu__filter-body-row.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤TYPE_OF_PANEL¤:
+                      ul.grand-menu__filter-body-list.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤Straight¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤Curved¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤Bevelled¤
+                    .grand-menu__filter-body-row.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤door_operation¤:
+                      ul.grand-menu__filter-body-list.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤SLIDING¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤HINGED¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤FOLDING¤
+                    .grand-menu__filter-body-row.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤number_of_doors¤:
+                      ul.grand-menu__filter-body-list.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤Fixed_no_Doors¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤One_Door¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤Two_Doors¤
+                    .grand-menu__filter-body-row.grand-menu__filter-body-row_margin.grand-menu__filter-body-row_padding.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p 
+                          | ¤glass_doors  
+                          br
+                          | and_panel_walls¤:
+                      ul.grand-menu__filter-body-list.grand-menu__filter-body-list_margin.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item-img.grand-menu__filter-body-item-img_active.text-uppercase
+                          img(src="assets/img/icons/glass-1.svg", alt="Icon")
+                        li.grand-menu__filter-body-item-img.text-uppercase
+                          img(src="assets/img/icons/glass-2.svg", alt="Icon")
+                        li.grand-menu__filter-body-item-img.text-uppercase
+                          img(src="assets/img/icons/glass-3.svg", alt="Icon")
+                        li.grand-menu__filter-body-item-img.text-uppercase
+                          img(src="assets/img/icons/glass-4.svg", alt="Icon")
+                    .grand-menu__filter-body-row.grand-menu__filter-body-row_margin.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤frame_colors¤:
+                      ul.grand-menu__filter-body-list.grand-menu__filter-body-list_margin.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/black.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center black
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/white.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select_black.svg", alt="Icons")
+                          p.text-uppercase.text-center white
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/bright.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center 
+                            | bright
+                            br
+                            | anodized
+                        li.grand-menu__filter-body-item-color.grand-menu__filter-body-item-color_active.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/grey.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center
+                            | grey
+                            br
+                            | anodized
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/brass.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center brass
+                    .grand-menu__filter-body-row.grand-menu__filter-body-row_margin.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤glass_color¤:
+                      ul.grand-menu__filter-body-list.grand-menu__filter-body-list_margin.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item-color.grand-menu__filter-body-item-color_active.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar.grand-menu__filter-body-item-color_transparent
+                            img(src="assets/img/icons/glass-transparent.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center transparent
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/glass-grey.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center grey
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/glass-satin.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center satin
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/glass-chinchilla.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center chinchilla
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/glass-reeded.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select_black.svg", alt="Icons")
+                          p.text-uppercase.text-center reeded
+                  .grand-menu__filter-body-btn
+                    button.text-uppercase ¤Show_Results¤
+            .tabs__content-item
+              .grand-menu__top
+                ul.grand-menu__top-list.d-flex.align-items-center
+                  li.nav-item.grand-menu__top-item.nav-item_active
+                    a(href="#").text-uppercase 
+                      | ¤Glass
+                      br
+                      | walls¤ 
+              .grand-menu__filter    
+                .grand-menu__filter-body
+                  .grand-menu__filter-body-wrapper(data-simplebar)
+                    .grand-menu__filter-body-row.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤series¤:
+                      ul.grand-menu__filter-body-list.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤vetro¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤blak¤
+                    .grand-menu__filter-body-row.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤door_operation¤:
+                      ul.grand-menu__filter-body-list.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤SLIDING¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤HINGED¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤FOLDING¤
+                    .grand-menu__filter-body-row.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤number_of_doors¤:
+                      ul.grand-menu__filter-body-list.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤Fixed_no_Doors¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤One_Door¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤Two_Doors¤
+                    .grand-menu__filter-body-row.grand-menu__filter-body-row_margin.grand-menu__filter-body-row_padding.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤frame_colors¤:
+                      ul.grand-menu__filter-body-list.grand-menu__filter-body-list_margin.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/black.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center black
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/white.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select_black.svg", alt="Icons")
+                          p.text-uppercase.text-center white
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/bright.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center 
+                            | bright
+                            br
+                            | anodized
+                        li.grand-menu__filter-body-item-color.grand-menu__filter-body-item-color_active.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/grey.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center
+                            | grey
+                            br
+                            | anodized
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/brass.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center brass
+                    .grand-menu__filter-body-row.grand-menu__filter-body-row_margin.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤glass_color¤:
+                      ul.grand-menu__filter-body-list.grand-menu__filter-body-list_margin.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item-color.grand-menu__filter-body-item-color_active.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar.grand-menu__filter-body-item-color_transparent
+                            img(src="assets/img/icons/glass-transparent.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center transparent
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/glass-grey.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center grey
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/glass-satin.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center satin
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/glass-chinchilla.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center chinchilla
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/glass-reeded.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select_black.svg", alt="Icons")
+                          p.text-uppercase.text-center reeded
+                  .grand-menu__filter-body-btn
+                    button.text-uppercase ¤Show_Results¤
+            .tabs__content-item.tabs__content-item_height
+              .grand-menu__filter    
+                .grand-menu__filter-body
+                  .grand-menu__filter-body-wrapper(data-simplebar)
+                    .grand-menu__filter-body-row.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤series¤:
+                      ul.grand-menu__filter-body-list.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤fill¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤tresor¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤Melange¤
+                    .grand-menu__filter-body-row.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤TYPE¤:
+                      ul.grand-menu__filter-body-list.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤hooks¤
+                        li.grand-menu__filter-body-item.text-uppercase
+                          a(href="#") ¤paper_holders¤
+                    .grand-menu__filter-body-row.grand-menu__filter-body-row_margin.grand-menu__filter-body-row_padding.d-flex
+                      .grand-menu__filter-body-title.text-uppercase
+                        p ¤color¤:
+                      ul.grand-menu__filter-body-list.grand-menu__filter-body-list_margin.d-flex.flex-wrap
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/brass.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center brass
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/black.svg", alt="Icon")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center black
+                        li.grand-menu__filter-body-item-color.text-uppercase
+                          .grand-menu__filter-body-item-color-avatar
+                            img(src="assets/img/icons/gun-metal.svg", alt="Gun Metal")
+                            img.grand-menu__filter-body-item-color_checked(src="assets/img/icons/color_select.svg", alt="Icons")
+                          p.text-uppercase.text-center
+                            | gun
+                            br
+                            | metal
+                  .grand-menu__filter-body-btn
+                    button.text-uppercase ¤Show_Results¤
+            

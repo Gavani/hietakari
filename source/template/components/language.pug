@@ -1,0 +1,31 @@
+mixin language(additionClass)
+  .language(class=`${additionClass}-language`)
+    .language__close-icon
+      a(href="#")
+        span
+        span
+    ul.language__list
+      li.language__item
+        a(href="#").language__item-link.d-flex.align-items-center
+          .language__item-link-icon
+            img(src="assets/img/icons/united_kingdom.svg", alt="Flags")
+          .language__item-link-text.text-uppercase
+            p ¤English¤
+      li.language__item
+        a(href="#").language__item-link.d-flex.align-items-center
+          .language__item-link-icon
+            img(src="assets/img/icons/finland.svg", alt="Flags")
+          .language__item-link-text.text-uppercase
+            p ¤Suomi¤
+      li.language__item
+        a(href="#").language__item-link.d-flex.align-items-center
+          .language__item-link-icon
+            img(src="assets/img/icons/sweden.svg", alt="Flags")
+          .language__item-link-text.text-uppercase
+            p ¤Svenska¤
+      li.language__item
+        a(href="#").language__item-link.d-flex.align-items-center
+          .language__item-link-icon
+            img(src="assets/img/icons/lithuania.svg", alt="Flags")
+          .language__item-link-text.text-uppercase
+            p ¤LIETUVIŠKAI¤

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="sweden" transform="translate(0)">
+    <g id="flags">
+      <g id="sweden-2" data-name="sweden">
+        <path id="blue" d="M32.8,13.333A16.015,16.015,0,0,0,11.69.91h0V13.333Zm0,5.333A16.015,16.015,0,0,1,11.69,31.09V18.667ZM1.244,13.333A15.975,15.975,0,0,1,6.356,4.074h0v9.259Zm0,5.333a15.975,15.975,0,0,0,5.112,9.259V18.667Z" transform="translate(-1.023)" fill="#227fbb" fill-rule="evenodd"/>
+        <path id="yellow" d="M5.333,17.544V8.285a15.99,15.99,0,0,1,5.333-3.164h0V17.544H31.779a16.183,16.183,0,0,1,0,5.333H10.667V35.3a15.99,15.99,0,0,1-5.333-3.164V22.877H.221a16.183,16.183,0,0,1,0-5.333Z" transform="translate(0 -4.211)" fill="#f2c500" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>
